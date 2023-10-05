@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobby</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 7.5% 24%,
+          rgb(237, 161, 193) 0%,
+          rgb(250, 178, 172) 25.5%,
+          rgb(190, 228, 210) 62.3%,
+          rgb(215, 248, 247) 93.8%
+        );
+        text-align: center;
+      }
+      hi {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      .learn {
+        display: block;
+        margin: 20px auto;
+        border-color: 1px solid rgb(219, 126, 157);
+        background: teal;
+        font-size: 25px;
+        border-radius: 6px;
+        padding: 10px 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 600px;
+        background: whitesmoke;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .learn:hover {
+        background: whitesmoke;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        font-family: monospace sans-serif;
+      }
+      button {
+        background-color: rgb(79, 59, 59);
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding: 5 8px;
+        border-radius: 6px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        color: black;
+        background: white;
+      }
+      .mini-one {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .mini-one:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+      img {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      img:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+      }
+      .grid img {
+        width: 100%;
+        aspect-ratio: 1/1;
+      }
+      .dark {
+        background: linear-gradient(
+          179.4deg,
+          rgb(12, 20, 69) -16.9%,
+          rgb(71, 30, 84) 119.9%
+        );
+        color: antiquewhite;
+      }
+      .dark .container {
+        background: rgb(72, 57, 57);
+      }
+      .dark .learn {
+        color: rgb(37, 44, 41);
+        background: rgb(255, 120, 165);
+      }
+      .dark a {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Mini Mille-Feuille</h1>
+      <h2>My favorite Hobby</h2>
+      <a
+        href="https://www.nzwomansweeklyfood.co.nz/recipes/mini-mille-feuille-20748"
+      >
+        <img
+          class="mini-one"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/155/original/Mini-mille-feuille-with-diplomat-cream_1200x800.jpeg?1683606620"
+          alt=""
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/154/original/Raspberry-Mille-Feuille-6-598x900.jpeg?1683606579"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/210/original/fave2.jpeg?1683642728"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/211/original/fave3.jpeg?1683643002"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/212/original/fave.jpeg?1683643560"
+          alt=""
+        />
+      </div>
+      <p>
+        Mini mille-feuille are single-portion desserts that combine the flavor
+        of the classic mille-feuille with a fascinating visual effect,
+        alternating three layers of semi-caramelized puff pastry with two layers
+        of delicate diplomat cream. The contrast between the crispy puff pastry
+        and the melt-in-the-mouth texture of the cream makes this the sort of
+        mouth-watering dessert you will never tire of. Mille-feuille is one of
+        the most classic and delicious desserts in the Italian pastry
+        repertoire, although it’s actually of French origin.
+        <br /><br />
+        📘
+        <a href="https://en.wikipedia.org/wiki/Mille-feuille">
+          <strong>Read on wikipedia</strong></a
+        >
+      </p>
+      <button class="learn">Favorite Recipe</button>
+    </div>
+    <footer>coded by Rediat Tadesse👩‍💻</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
